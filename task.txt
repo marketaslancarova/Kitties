@@ -1,0 +1,73 @@
+To-Do List: Aplikace "Katalog koček" s využitím The Cat API
+Tento seznam úkolů tě povede krok za krokem k vytvoření aplikace využívající The Cat API.
+
+1. Nastavení projektu
+ Inicializuj React projekt:
+
+
+ Nainstaluj závislosti (pokud budou potřeba):
+Např. axios pro HTTP požadavky, nebo tailwindcss/bootstrap pro styling.
+ 
+ Vytvoř základní složky:
+components/ pro jednotlivé části UI (např. karty koček).
+services/ (volitelné) pro práci s API.
+
+2. Propojení s API
+ Přečti si dokumentaci k The Cat API (https://thecatapi.com/).
+ Vytvoř funkci pro získání dat z API:
+Např. pomocí axios nebo fetch.
+API endpoint: https://api.thecatapi.com/v1/images/search.
+Zajisti načtení více obrázků (např. parametr ?limit=10).
+ Ujisti se, že API vrací správná data (ověř v konzoli).
+ Přidej error handling pro případ, že API selže.
+
+3. Struktura UI
+ Vytvoř hlavní komponenty:
+Header: Nadpis a popis aplikace.
+SearchBox: Pole pro vyhledávání.
+CatList: Mřížka karet s obrázky koček.
+CatCard: Samostatná karta zobrazující obrázek a další informace o kočce.
+ Navrhni layout aplikace pomocí CSS nebo knihovny (např. Tailwind CSS nebo Flexbox/Grid).
+
+4. Zobrazení dat
+ Přidej funkci pro zobrazení načtených obrázků:
+Při načtení dat z API vykresli karty pomocí komponenty CatCard.
+ Ujisti se, že obrázky a další data (např. ID) jsou viditelné v každé kartě.
+ Udělej mřížkový layout pro seznam koček (CatList).
+
+5. Filtrování a vyhledávání
+ Přidej vyhledávací pole (SearchBox):
+Umožni hledání podle jména kočky (pokud použiješ vlastní seznam jmen nebo atributů).
+ Zajisti real-time vyhledávání:
+Filtruj karty na základě textu zadaného uživatelem.
+ Přidej stav "Nebyly nalezeny žádné kočky", pokud filtr nic nenajde.
+
+6. Pokročilé funkce (volitelné)
+ Přidej tlačítko "Načíst další kočky", které načte další sadu obrázků z API.
+ Přidej možnost označit kočky jako oblíbené:
+Kliknutím na ikonu srdce ukládej oblíbené kočky do localStorage.
+Přidej sekci "Oblíbené kočky", která zobrazuje uložené položky.
+ Přidej animace (např. při načítání nebo hoveru na kartu).
+
+7. Testování
+ Otestuj aplikaci na různých zařízeních (desktop/mobil).
+ Ověř, že API požadavky fungují správně i při špatném připojení.
+ Ujisti se, že filtry a další funkce fungují bez chyb.
+
+8. Nasazení
+ Nahraj kód na GitHub nebo jinou platformu pro verzování.
+ Nasazení aplikace:
+Použij Netlify, Vercel nebo GitHub Pages.
+ Ověř, že nasazená aplikace funguje.
+
+9. Dokumentace
+ Vytvoř soubor README.md:
+Popis projektu a jeho funkcí.
+Instrukce pro spuštění aplikace lokálně.
+Odkaz na spuštěnou aplikaci.
+ Přilož snímky obrazovky aplikace.
+
+10. Bonusové nápady (volitelné)
+ Přidej možnost zobrazit detaily kočky na samostatné stránce (např. obrázek, ID, popis).
+ Přidej tematické pozadí nebo vlastní grafické prvky.
+ Přidej tříditelnost (např. "nejnovější" vs "nejoblíbenější").
